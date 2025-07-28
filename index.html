@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contagem de Produtos</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#333" />
+  <meta name="mobile-web-app-capable" content="yes" />
+</head>
+<body>
+  <header>
+    <h1>Contagem de Produtos</h1>
+    <div id="resumo">
+      <p>Total geral: <span id="total-geral">0</span></p>
+    </div>
+  </header>
+
+  <section id="filtros">
+    <label>Filtrar por grupo:
+      <select id="grupo-filtro">
+        <option value="">Todos</option>
+      </select>
+    </label>
+  </section>
+
+  <main id="lista-produtos"></main>
+
+  <footer>
+    <button onclick="zerarContagem()">Zerar Contagem</button>
+    <button onclick="exportarCSV()">Exportar CSV</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
